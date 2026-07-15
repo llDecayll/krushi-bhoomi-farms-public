@@ -1,0 +1,25 @@
+{
+  "name": "Krushi Bhoomi Farms",
+  "short_name": "Krushi Bhoomi",
+  "description": "Managed farmland, sandalwood tree investment & sustainable farm plots in Yelandur, Karnataka.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4f3ef",
+  "theme_color": "#1d1d1b",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/assets/images/logo/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/logo/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
