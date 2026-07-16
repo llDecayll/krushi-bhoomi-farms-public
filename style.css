@@ -749,9 +749,9 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    border: 2px solid #050505;
+    border: 0;
     color: var(--dark);
-    background: #fff;
+    background: transparent;
     line-height: 1;
     flex-shrink: 0;
   }
@@ -833,7 +833,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
     height: 36px;
   }
   .mobile-contact-link {
-    border-width: 2px;
+    border-width: 0;
   }
   .mobile-contact-link svg {
     width: 18px;
