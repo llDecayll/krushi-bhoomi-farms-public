@@ -682,26 +682,29 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
 /* ============ Responsive ============ */
 @media (max-width: 960px) {
   .site-header {
-    padding: 10px 0;
+    padding: 8px 0;
   }
   .header-inner {
-    gap: 12px;
-    min-height: 52px;
+    gap: 10px;
+    min-height: 54px;
     flex-wrap: nowrap;
   }
   .site-header .logo {
-    flex: 0 1 180px;
+    flex: 0 1 150px;
     min-width: 0;
+    overflow: hidden;
   }
   .site-header .logo picture {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 150px !important;
   }
   .site-header .logo img {
     display: block;
-    width: 100%;
-    max-width: 180px;
-    height: auto;
+    width: auto !important;
+    max-width: 150px !important;
+    max-height: 56px !important;
+    height: auto !important;
   }
   .main-nav {
     position: absolute;
@@ -748,12 +751,15 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
   }
 
   /* Hide the standalone header CTA on mobile */
-  .header-actions { display: none !important; }
+  .site-header .header-actions,
+  .site-header .header-actions .btn-outline { display: none !important; }
 
   /* Smaller logo on mobile, in both header and footer */
   .site-header .logo-full {
-    max-width: 180px;
-    height: auto;
+    width: auto !important;
+    max-width: 150px !important;
+    max-height: 56px !important;
+    height: auto !important;
   }
   .footer-brand .logo-full { height: 64px; }
 
@@ -770,13 +776,24 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
   .container {
     width: min(100%, calc(100% - 28px));
   }
+  .site-header {
+    padding: 6px 0;
+  }
+  .header-inner {
+    min-height: 48px;
+  }
   .site-header .logo {
-    flex-basis: 150px;
+    flex: 0 1 118px;
+  }
+  .site-header .logo picture {
+    max-width: 118px !important;
   }
   .site-header .logo img,
   .site-header .logo-full {
-    max-width: 150px;
-    height: auto;
+    width: auto !important;
+    max-width: 118px !important;
+    max-height: 46px !important;
+    height: auto !important;
   }
   .main-nav {
     top: calc(100% + 8px);
@@ -787,9 +804,15 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
     padding: 12px 14px;
   }
   .nav-toggle {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    position: relative;
+  }
+  .nav-toggle::before {
+    content: "☰";
     font-size: 18px;
+    line-height: 1;
   }
   .stats-grid { grid-template-columns: 1fr; }
   .stat { border-left: none; }

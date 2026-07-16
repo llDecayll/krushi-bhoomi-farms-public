@@ -23,7 +23,7 @@ if (!consentChoice) {
   banner.setAttribute('role', 'dialog');
   banner.setAttribute('aria-label', 'Cookie consent');
   banner.innerHTML = `
-    <p>We use cookies to understand site traffic via Google Analytics. See our <a href="/krushi-bhoomi-farms-01/privacy.html">Privacy Policy</a>.</p>
+    <p>We use cookies to understand site traffic via Google Analytics. See our <a href="privacy">Privacy Policy</a>.</p>
     <div class="cookie-banner-actions">
       <button type="button" class="btn-outline cookie-decline">Decline</button>
       <button type="button" class="btn-dark cookie-accept">Accept</button>
@@ -282,7 +282,7 @@ const sendForm = async (form, payload, messageElement, successMessage) => {
   }
 
   try {
-    const response = await fetch('/krushi-bhoomi-farms-01/contact.html', {
+    const response = await fetch('/contact.php', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
