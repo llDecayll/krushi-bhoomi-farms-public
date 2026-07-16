@@ -692,28 +692,28 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
 /* ============ Responsive ============ */
 @media (max-width: 960px) {
   .site-header {
-    padding: 8px 0;
+    padding: 6px 0;
   }
   .header-inner {
     gap: 10px;
-    min-height: 54px;
+    min-height: 48px;
     flex-wrap: nowrap;
   }
   .site-header .logo {
-    flex: 0 1 150px;
+    flex: 0 1 130px;
     min-width: 0;
     overflow: hidden;
   }
   .site-header .logo picture {
     display: block;
     width: auto;
-    max-width: 150px !important;
+    max-width: 130px !important;
   }
   .site-header .logo img {
     display: block;
     width: auto !important;
-    max-width: 150px !important;
-    max-height: 56px !important;
+    max-width: 130px !important;
+    max-height: 48px !important;
     height: auto !important;
   }
   .main-nav {
@@ -746,8 +746,8 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    width: 46px;
-    height: 46px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     border: 2px solid #050505;
     color: var(--dark);
@@ -759,8 +759,8 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 46px;
-    height: 46px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     border: 1px solid var(--dark);
     background: var(--dark);
@@ -781,8 +781,8 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
   /* Smaller logo on mobile, in both header and footer */
   .site-header .logo-full {
     width: auto !important;
-    max-width: 150px !important;
-    max-height: 56px !important;
+    max-width: 130px !important;
+    max-height: 48px !important;
     height: auto !important;
   }
   .footer-brand .logo-full { height: 64px; }
@@ -801,22 +801,22 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
     width: min(100%, calc(100% - 28px));
   }
   .site-header {
-    padding: 6px 0;
+    padding: 4px 0;
   }
   .header-inner {
-    min-height: 48px;
+    min-height: 42px;
   }
   .site-header .logo {
-    flex: 0 1 118px;
+    flex: 0 1 92px;
   }
   .site-header .logo picture {
-    max-width: 118px !important;
+    max-width: 92px !important;
   }
   .site-header .logo img,
   .site-header .logo-full {
     width: auto !important;
-    max-width: 118px !important;
-    max-height: 46px !important;
+    max-width: 92px !important;
+    max-height: 38px !important;
     height: auto !important;
   }
   .main-nav {
@@ -829,15 +829,15 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
   }
   .mobile-contact-link,
   .nav-toggle {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
   }
   .mobile-contact-link {
     border-width: 2px;
   }
   .mobile-contact-link svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
   .nav-toggle {
     font-size: 0;
@@ -845,7 +845,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; }
   }
   .nav-toggle::before {
     content: "☰";
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1;
   }
   .stats-grid { grid-template-columns: 1fr; }
